@@ -40,9 +40,9 @@ emailInput.addEventListener('input', function () {
   var bio = bioInput.value
   var email = emailInput.value
 
-  preview.innerHTML = '<h3>Hi, my name is ' + firstName + ' ' + lastName + '</h3>' + '\n' + '<p>' + bio + '</p>' + '\n' + '<p>' + 'If you\'re interested in a date, you can email me at <a href="mailto:email" target="_blank">' + email + '</a>'
+  preview.innerHTML = '<h3>Hi, my name is ' + firstName + ' ' + lastName + '</h3>' + '\n' + '<p>' + bio + '</p>' + '\n' + '<p>' + 'If you\'re interested in a date, you can email me at ' + '<a href="mailto:' + email + '"target="_blank">' + email + '</a>'
 
-  rawHtml.textContent = '<h3>Hi, my name is ' + firstName + ' ' + lastName + '</h3>' + '\n' + '<p>' + bio + '</p>' + '\n' + '<p>' + 'If you\'re interested in a date, you can email me at <a href="mailto:email" target="_blank">' + email + '</a>'
+  rawHtml.textContent = '<h3>Hi, my name is ' + firstName + ' ' + lastName + '</h3>' + '\n' + '<p>' + bio + '</p>' + '\n' + '<p>' + 'If you\'re interested in a date, you can email me at ' + '<a href="mailto:' + email + '" target="_blank">' + email + '</a>'
 })
 
 phoneInput.addEventListener('input', function () {
@@ -52,7 +52,7 @@ phoneInput.addEventListener('input', function () {
   var email = emailInput.value
   var phone = phoneInput.value
 
-  preview.innerHTML = '<h3>Hi, my name is ' + firstName + ' ' + lastName + '</h3>' + '\n' + '<p>' + bio + '</p>' + '\n' + '<p>' + 'If you\'re interested in a date, you can email me at ' + '<a href="mailto:email"' + 'target="_blank">' + email + '</a>' + ' or give me a call at <a href="tel:phone" target="_blank">' + phone + '</a>' + '</p>'
+  preview.innerHTML = '<h3>Hi, my name is ' + firstName + ' ' + lastName + '</h3>' + '\n' + '<p>' + bio + '</p>' + '\n' + '<p>' + 'If you\'re interested in a date, you can email me at ' + '<a href="mailto:' + email + '" target="_blank">' + email + '</a>' + ' or give me a call at <a href="tel:' + phone + '" target="_blank">' + phone + '</a>' + '</p>'
 
-  rawHtml.textContent = '<h3>Hi, my name is ' + firstName + ' ' + lastName + '</h3>' + '\n' + '<p>' + bio + '</p>' + '\n' + '<p>' + 'If you\'re interested in a date, you can email me at ' + '<a href="mailto:email"' + 'target="_blank">' + email + '</a>' + ' or give me a call at <a href="tel:phone" target="_blank">' + phone + '</a>' + '</p>'
+  rawHtml.textContent = '<h3>Hi, my name is ' + firstName + ' ' + lastName + '</h3>' + '\n' + '<p>' + bio + '</p>' + '\n' + '<p>' + 'If you\'re interested in a date, you can email me at ' + '<a href="mailto:' + email + '" target="_blank">' + email + '</a>' + ' or give me a call at <a href="tel:' + phone + '" target="_blank">' + phone + '</a>' + '</p>'
 })
